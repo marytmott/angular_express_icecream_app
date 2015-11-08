@@ -69,7 +69,11 @@ apiRouter.route('/icecreams/:icecreamId')
   });
 });
 
-app.use('/', apiRouter);
+app.use('/api', apiRouter);
+
+app.get('/', function(req, res) {
+  res.render('index.ejs');
+});
 
 PORT = 3001;
 
