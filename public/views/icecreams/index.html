@@ -1,1 +1,30 @@
 <h1>Hi from the icecream index view!</h1>
+<button ng-click="vm.toggleForm()">Add Ice Cream</button>
+<form ng-show="vm.showForm">
+  <label>Name of ice cream:
+    <input type="text" ng-model="vm.iceCream.name" />
+  </label>
+  <label>Description:
+    <textarea ng-model="vm.iceCream.description"></textarea>
+  </label>
+  <button ng-click="vm.addIceCream()">Submit</button>
+</form>
+
+<table>
+  <thead>
+    <tr>
+      <th scope="col">Flavor</th>
+      <th scope="col">Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr ng-repeat="iceCream in vm.flavors">
+    <td>{{iceCream.name}}</td>
+    <td>{{iceCream.description}}</td>
+    <td>
+      <button>Edit</button>
+      <button>Delete</button>
+    </td>
+    </tr>
+  </tbody>
+</table>

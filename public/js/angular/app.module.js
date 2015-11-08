@@ -1,9 +1,9 @@
 (function() {
   'use strict';
 
-  angular.module('icecreamTown', [
+  angular.module('iceCreamTown', [
     'ngRoute',
-    'icecreamTown.icecreams'
+    'iceCreamTown.iceCreams'
     ])
   .config(configRoutes);
 

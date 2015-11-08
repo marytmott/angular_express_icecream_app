@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html ng-app="icecreamTown">
+<html ng-app="iceCreamTown">
 <head>
   <meta charset="utf-8">
   <title>Ice Cream Shop</title>
@@ -9,11 +9,16 @@
 </head>
 <body>
 
-  <div ng-view></div>
+  <div class="container" ng-view></div>
 
   <script src="js/angular/app.module.js"></script>
-  <script src="js/angular/icecreams/icecreams.module.js"></script>
-  <script src="js/angular/icecreams/config.route.js"></script>
+
+  <!-- ice creams -->
+  <script src="js/angular/iceCreams/iceCreams.module.js"></script>
+  <script src="js/angular/iceCreams/iceCreams.controller.js"></script>
+  <script src="js/angular/iceCreams/config.route.js"></script>
+  <script src="js/angular/iceCreams/iceCreams.factory.js"></script>
+
 
 
 </body>

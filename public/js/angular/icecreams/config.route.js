@@ -1,7 +1,7 @@
 (function() {
   'use strict';
 
-  angular.module('icecreamTown.icecreams')
+  angular.module('iceCreamTown.iceCreams')
     .config(configRoutes);
 
   configRoutes.$inject = ['$routeProvider'];
@@ -9,13 +9,13 @@
   function configRoutes($routeProvider) {
     $routeProvider
       .when('/', {
-        templateUrl: '/views/icecreams/index.html',
-        controller: 'IcecreamsController',
+        templateUrl: '/views/iceCreams/index.html',
+        controller: 'IceCreamsController',
         controllerAs: 'vm'
       })
       .when('/:icecream', {
-        templateUrl: '/views/icecreams/show.html',
-        controller: 'IcecreamsController',
+        templateUrl: '/views/iceCreams/show.html',
+        controller: 'IceCreamsController',
         controllerAs: 'vm'
       });
   }

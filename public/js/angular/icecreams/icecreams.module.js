@@ -1,6 +1,6 @@
 (function() {
   'use strict';
 
-  angular.module('icecreamTown.icecreams', []);
+  angular.module('iceCreamTown.iceCreams', []);
 
 })();
