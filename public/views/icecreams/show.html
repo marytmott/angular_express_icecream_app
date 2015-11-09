@@ -1,1 +1,12 @@
-<h1>Show page!</h1>
+<h4>{{vm.iceCream.name}}</h4>
+<p>Description: {{vm.iceCream.description}}</p>
+<form>
+  <label>Change Name:
+    <input type="text" placeholder="{{vm.iceCream.name}}" ng-model="iceCream.name" />
+  </label>
+  <label>Change Description:
+    <textarea placeholder="{{vm.iceCream.description}}" ng-model="iceCream.description"></textarea>
+  </label>
+  <button class="btn btn-primary" ng-click="vm.updateIceCream(iceCream)">Update</button>
+</form>
+

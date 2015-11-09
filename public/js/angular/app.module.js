@@ -3,7 +3,8 @@
 
   angular.module('iceCreamTown', [
     'ngRoute',
-    'iceCreamTown.iceCreams'
+    'iceCreamTown.iceCreams',
+    'iceCreamTown.iceCream'
     ])
   .config(configRoutes);
 

@@ -1,19 +1,17 @@
 (function() {
   'use strict';
 
-  angular.module('iceCreamTown.iceCreams')
+  angular.module('iceCreamTown.iceCream')
     .config(configRoutes);
 
   configRoutes.$inject = ['$routeProvider'];
 
   function configRoutes($routeProvider) {
     $routeProvider
-      .when('/', {
-        templateUrl: '/views/iceCreams/index.html',
-        controller: 'IceCreamsController',
+      .when('/:icecream', {
+        templateUrl: '/views/iceCreams/show.html',
+        controller: 'IceCreamController',
         controllerAs: 'vm'
       });
   }
 })();
-
-//add locationProvider..html5mode

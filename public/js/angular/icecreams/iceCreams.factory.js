@@ -12,8 +12,6 @@
       return $http.post('/api/icecreams', iceCream)
         .success(iceCreamSuccess)
         .error(iceCreamError);
-
-
     }
 
     function getIceCreams() {
@@ -23,18 +21,25 @@
     }
 
     function iceCreamSuccess(data) {
-      console.log(data);
       return data;
     }
 
-    function iceCreamError(data) {
+    function iceCreamError(error) {
       console.log(error)
     }
 
+    function deleteIceCream(iceCreamId) {
+      var url = '/api/icecreams/' + iceCreamId;
+      console.log(url);
+      return $http.delete(url, iceCreamId)
+        .success(iceCreamSuccess)
+        .error(iceCreamError);
+    }
 
     return {
       postIceCream: postIceCream,
-      getIceCreams: getIceCreams
+      getIceCreams: getIceCreams,
+      deleteIceCream: deleteIceCream
     };
   }
 
