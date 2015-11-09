@@ -25,12 +25,11 @@
     }
 
     function iceCreamError(error) {
-      console.log(error)
+      console.log(error);
     }
 
     function deleteIceCream(iceCreamId) {
       var url = '/api/icecreams/' + iceCreamId;
-      console.log(url);
       return $http.delete(url, iceCreamId)
         .success(iceCreamSuccess)
         .error(iceCreamError);
